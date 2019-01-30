@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="QueenNames" groupId="com.example.Queen.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/QueenNames.xml</file>
+    </artifact>
+    <artifact name="Queen" groupId="com.example.Queen.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/Queen.xml</file>
+    </artifact>
+    <artifact name="QueenMemberInSeq" groupId="com.example.Queen.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/QueenMemberInSeq.xml</file>
+    </artifact>
+    <artifact name="QueenMemberOutSeq" groupId="com.example.Queen.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/QueenMemberOutSeq.xml</file>
+    </artifact>
+    <artifact name="QueenMemberFaultSeq" groupId="com.example.Queen.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/QueenMemberFaultSeq.xml</file>
+    </artifact>
+    <artifact name="QueenRoles" groupId="com.example.Queen.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/QueenRoles.xml</file>
+    </artifact>
+    <artifact name="QueenInstruments" groupId="com.example.Queen.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/QueenInstruments.xml</file>
+    </artifact>
+</artifacts>
