@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="OlympicsLocationsInSeq" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <filter regex="^20[0-1][0-9]$" source="get-property('uri.var.year')">
+        <then>
+            <send>
+                <endpoint key="OlympicsLocations"/>
+            </send>
+        </then>
+        <else>
+            <payloadFactory media-type="json">
+                <format>{&#xd;
+"error Message" : "invaid year - not in range 2000 - 2020"}</format>
+                <args/>
+            </payloadFactory>
+            <property name="HTTP_SC" scope="axis2" type="STRING" value="400"/>
+            <respond description=""/>
+        </else>
+    </filter>
+</sequence>

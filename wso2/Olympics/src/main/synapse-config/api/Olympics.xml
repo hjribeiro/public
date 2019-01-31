@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/olympics" name="Olympics" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET" uri-template="/location/{year}">
+        <inSequence>
+            <sequence key="OlympicsLocationsInSeq"/>
+        </inSequence>
+        <outSequence>
+            <sequence key="OlympicsLocationsOutSeq"/>
+        </outSequence>
+        <faultSequence>
+            <sequence key="OlympicsLocationsFaultSeq"/>
+        </faultSequence>
+    </resource>
+</api>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="OlympicsLocationsFaultSeq" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <payloadFactory media-type="json">
+        <format>{"message": "unexpected Error"}</format>
+        <args/>
+    </payloadFactory>
+    <property name="HTTP_SC" scope="axis2" type="STRING" value="500"/>
+    <respond/>
+</sequence>

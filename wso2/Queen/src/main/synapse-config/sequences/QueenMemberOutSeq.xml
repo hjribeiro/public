@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sequence name="QueenMemberOutSeq" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <payloadFactory media-type="xml">
+        <format>
+            <inline xmlns=""/>
+        </format>
+        <args/>
+    </payloadFactory>
     <respond/>
 </sequence>

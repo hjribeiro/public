@@ -3,6 +3,7 @@
     <log description="log" level="full">
         <property name="property_name" value="property_value"/>
     </log>
+    <property expression="json-eval($.body)" name="RolesPayload" scope="default" type="STRING"/>
     <call>
         <endpoint key="QueenRoles"/>
     </call>
